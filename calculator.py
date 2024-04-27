@@ -1,3 +1,5 @@
+import math
+
 def add(x, y):
     return x + y
 
@@ -22,6 +24,18 @@ def modulus(x, y):
     else:
         return x % y
 
+def square_root(x):
+    if x < 0:
+        return "Error! Cannot take square root of a negative number."
+    else:
+        return math.sqrt(x)
+
+def logarithm(x, base):
+    if x <= 0 or base <= 0 or base == 1:
+        return "Error! Invalid input for logarithm."
+    else:
+        return math.log(x, base)
+
 def main():
     while True:
         print("\nAdvanced Calculator")
@@ -31,9 +45,10 @@ def main():
         print("4. Division")
         print("5. Power")
         print("6. Modulus")
-        print("7. Exit")
-
-        choice = input("Enter your choice (1/2/3/4/5/6/7): ")
+        print("7. Square Root")
+        print("8. Logarithm")
+        print("9. Exit")
+        choice = input("Enter your choice (1/2/3/4/5/6/7/8/9): ")
 
         if choice in ('1', '2', '3', '4', '5', '6'):
             num1 = float(input("Enter first number: "))
@@ -53,6 +68,15 @@ def main():
                 print(num1, "%", num2, "=", modulus(num1, num2))
 
         elif choice == '7':
+            num = float(input("Enter a number: "))
+            print("sqrt(", num, ") =", square_root(num))
+
+        elif choice == '8':
+            num = float(input("Enter a number: "))
+            base = float(input("Enter the base: "))
+            print("log base", base, "of", num, "=", logarithm(num, base))
+
+        elif choice == '9':
             print("Exiting the calculator.")
             break
 
