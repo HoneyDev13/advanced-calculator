@@ -1,6 +1,6 @@
 # Advanced Calculator
 
-This is an advanced calculator program written in Python. It provides a simple text-based interface to perform a variety of arithmetic operations such as addition, subtraction, multiplication, division, exponentiation, modulus, square root, and logarithm.
+This is an advanced calculator program written in Python. It provides a simple text-based interface to perform a variety of arithmetic and mathematical operations.
 
 ## Features
 
@@ -12,6 +12,10 @@ This is an advanced calculator program written in Python. It provides a simple t
 - Modulus
 - Square Root
 - Logarithm
+- Factorial
+- Sine
+- Cosine
+- Tangent
 
 ## Installation
 
@@ -19,7 +23,7 @@ To run this calculator, you need to have Python installed on your system. If you
 
 ### Clone this repository
 
-git clone https://github.com/HoneyDev13/advanced-calculator.git
+git clone https://github.com/username/advanced-calculator.git
 
 # Navigate to the project directory
 cd advanced-calculator
